@@ -1,0 +1,12 @@
+{
+  "startup": "Runway",
+  "fit_score": 8,
+  "company_summary": "Runway is a company that develops foundational multimodal AI models for content generation, with a core product focused on physics-aware AI video-generation models. Recently, the company launched a $10 million fund and startup program to support companies building with its AI video models, and also released its first world model. Runway has raised significant funding, including a $50 million Series C round in December 2022 and a $141 million Series C extension round in June 2023, valuing the company at $1.5 billion. With this funding, the company is pushing towards developing interactive, real-time \"video intelligence\" applications, although its team size is not mentioned.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in deep learning, LangChain, and LangGraph align well with Runway's focus on AI video-generation models, and their experience with RAG pipelines and multi-agent systems could be valuable in developing interactive video intelligence applications. However, the candidate's background in mechanical/production engineering may not be directly relevant to the company's core product. The candidate's projects and GitHub profile demonstrate a strong foundation in relevant technologies.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, deep learning (CNNs, RNNs, LSTMs), FastAPI\nGAPS: experience with physics-aware AI models, video-generation models, large-scale AI model deployment, Docker advanced usage, Groq API integration in production environments",
+  "cold_email": "Email generation failed: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7h6pgaezessks5r524qx7w` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11859, Requested 630. Please try again in 2.445s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+  "linkedin_note": "\"Excited about Runway's physics-aware AI video models. Built AI-powered video tools — would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

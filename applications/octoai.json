@@ -1,0 +1,12 @@
+{
+  "startup": "OctoAI",
+  "fit_score": 8,
+  "company_summary": "OctoAI is an AI infrastructure platform designed to help developers run, tune, and scale generative AI models efficiently.\nOctoAI became a go-to for developers who wanted to deploy open-source models like Llama, Mistral, and Stable Diffusion without managing the messy backend infrastructure of GPU clusters. In late 2024, OctoAI was acquired by NVIDIA for approximately $250 million.\nJul 20, 2025 · OctoAI delivers generative AI infrastructure to run, tune, and scale models that power AI applicatio",
+  "tech_stack": "Unknown",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in LangChain, LangGraph, and RAG pipelines demonstrate a strong foundation in AI and machine learning, which aligns well with OctoAI's focus on generative AI infrastructure. Additionally, their experience with FastAPI, Docker, and deep learning frameworks suggests they could contribute to the development and deployment of AI models. However, the candidate's lack of direct experience with GPU clusters and AI infrastructure management may require additional training.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, FastAPI, deep learning, Docker basics\nGAPS: GPU cluster management, AI infrastructure scaling, cloud computing, NVIDIA-specific technologies",
+  "cold_email": "Following NVIDIA's acquisition of OctoAI, I was impressed by the potential for accelerated growth in generative AI infrastructure. As a student at IIT Roorkee, I've worked on projects like the RAG pipeline, which involved fine-tuning language models for specific tasks. I'm excited about the opportunity to apply my skills in a real-world setting. I'd love to discuss how my experience with LangGraph and RAG pipelines could contribute to OctoAI's mission. Can we schedule a 15-minute call to explore potential internship opportunities?\n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "Interested in OctoAI's seamless deployment of Llama models — Built AI solutions with similar tech, would love to discuss.",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

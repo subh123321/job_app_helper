@@ -1,0 +1,12 @@
+{
+  "startup": "AssemblyAI",
+  "fit_score": 8,
+  "company_summary": "AssemblyAI is a product management AI startup that specializes in speech-to-text technology, leveraging voice data to build new AI products. Their core product utilizes industry-leading Speech AI models for accurate speech-to-text and speaker detection. Recently, the company has partnered with Zoom to advance its AI research and development, with Zoom leveraging AssemblyAI's technology. The company's funding stage and team size are not mentioned, but they appear to be established enough to have partnered with major companies like Zoom.",
+  "tech_stack": "Here's the extracted tech stack:\n* Programming languages: Python\n* ML/AI frameworks: Not mentioned\n* Vector databases: Not mentioned\n* Cloud infra: Not mentioned\n* LLM tooling: AssemblyAI (for speech-to-text and conversation intelligence)",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate has a strong foundation in Python and relevant experience with AI/ML technologies, which aligns well with AssemblyAI's speech-to-text technology and AI product development. However, the candidate's background in mechanical/production engineering may not directly relate to the company's core focus on speech-to-text and voice data analysis. The candidate's projects and skills demonstrate a potential to adapt to AssemblyAI's tech stack and contribute to the company's AI research and development.\nMATCHING_SKILLS: Python, deep learning, AI/ML experience\nGAPS: specific experience with speech-to-text technology, speaker detection, industry-leading Speech AI models, cloud infrastructure, vector databases",
+  "cold_email": "I was impressed by AssemblyAI's recent partnership with Zoom to advance AI research and development, particularly how your speech-to-text technology can enhance video conferencing experiences. As a student at IIT Roorkee, I've been exploring AI applications, including the RAG pipeline, which I believe could be leveraged to improve conversation intelligence. I'd love to discuss how my skills in Python and deep learning could contribute to AssemblyAI's mission. Can we schedule a 15-minute call to explore potential internship opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in AssemblyAI's speech-to-text tech, especially the speaker detection feature. Built speech-enabled apps with Python — would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

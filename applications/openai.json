@@ -1,0 +1,12 @@
+{
+  "startup": "OpenAI",
+  "fit_score": 8,
+  "company_summary": "OpenAI is an American artificial intelligence organization that offers a variety of products and applications. Its core products and applications are centered around artificial intelligence, catering to different stages of a startup's journey. Recently, the company has achieved significant milestones, with over 900 million weekly active users and $2 billion in monthly revenue, solidifying its position as the dominant consumer AI platform globally. With no specific funding stage or team size mentioned, OpenAI's current success is a testament to its growth and impact in the AI industry.",
+  "tech_stack": "Here's the extracted tech stack:\n* Programming languages: Python\n* ML/AI frameworks: OpenAI\n* LLM tooling: llama_Index \n(Note: No vector databases or cloud infra mentioned)",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in Python, LangChain, and LangGraph demonstrate a strong foundation in AI and machine learning, which aligns well with OpenAI's core products and applications. However, the candidate's background in Mechanical/Production Engineering may not be directly relevant to OpenAI's work, and some technical skills like Docker and cloud infrastructure are not mentioned. The candidate's projects and GitHub profile showcase their ability to apply AI concepts to real-world problems, making them a strong fit for OpenAI.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, deep learning\nGAPS: ML/AI frameworks (specifically OpenAI), LLM tooling (specifically llama_Index), cloud infrastructure, vector databases",
+  "cold_email": "With OpenAI's recent milestone of 900 million weekly active users, I was impressed by the potential of the LangGraph agent in enhancing user experience. As a student at IIT Roorkee, I've worked on projects involving RAG pipelines, which I believe could be leveraged to improve the efficiency of OpenAI's models. I'd love to discuss how my skills align with OpenAI's tech stack and explore potential internship opportunities. Can we schedule a 15-minute call to discuss further?\n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in exploring llama_Index applications. Built AI-powered solutions with Python — would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

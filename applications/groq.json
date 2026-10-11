@@ -1,0 +1,12 @@
+{
+  "startup": "Groq",
+  "fit_score": 8,
+  "company_summary": "1 week ago - On February 19, 2024, Groq soft-launched a developer platform, GroqCloud™, to attract developers into using the Groq API and rent access to their chips. On March 1, 2024 Groq acquired Definitive Intelligence, a startup known for offering a range of business-oriented AI solutions, to help ...\nAugust 11, 2024 - Groq continues full steam ahead after its latest funding round, hoping its work on AI semiconductors will compete with tech giants like Nvidia and AMD · Startup Groq continues ",
+  "tech_stack": "Unknown",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate has a strong background in AI and machine learning, with skills that align with Groq's focus on AI semiconductors and developer platforms. The candidate's experience with the Groq API and LangGraph, as well as their projects on RAG pipelines and multi-agent systems, demonstrate a good fit for the company's technology and goals. However, the candidate's lack of direct experience with Groq's specific tech stack and industry may require some additional learning and adaptation.\nMATCHING_SKILLS: Python, Groq API, LangGraph, RAG pipelines, deep learning, FastAPI\nGAPS: experience with AI semiconductors, Docker expertise, industry experience, knowledge of Groq's specific tech stack and Definitive Intelligence's business-oriented AI solutions",
+  "cold_email": "Groq's recent acquisition of Definitive Intelligence and the launch of GroqCloud™ demonstrate the company's commitment to advancing AI solutions. As a student at IIT Roorkee, I've been exploring the potential of AI semiconductors and developed a project utilizing the RAG pipeline to improve question-answering systems. I'm excited about the prospect of contributing to Groq's innovative work, particularly with the LangGraph agent. Would you be available for a 15-minute call to discuss potential internship opportunities and how my skills align with Groq's goals?\n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "Interested in GroqCloud's potential for scalable AI solutions - Built high-performance models with similar tech, would love to discuss optimization strategies.",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

@@ -1,0 +1,27 @@
+{
+  "startup": "Haystack (deepset)",
+  "fit_score": 6,
+  "company_summary": "Deepset is a company that offers an enterprise end-to-end AI development platform called deepset Cloud, which is powered by their Haystack framework. Their core product, deepset Cloud, enables teams to design, build, test, and deploy custom AI agents and applications with enterprise-grade security and scalability. There is no recent news or funding stage mentioned in the provided text. The approximate team size is not mentioned, but the company appears to cater to both startups and enterprises, providing a robust foundation for AI applications.",
+  "tech_stack": "* Programming languages: Python\n* ML/AI frameworks: Haystack\n* Vector databases: Not mentioned\n* Cloud infra: Not mentioned\n* LLM tooling: Haystack (for building LLM applications), RAG systems",
+  "fit_assessment": "SCORE: 6\nREASONING: While Subhra understands the fundamentals of RAG pipelines and Python microservices, his portfolio leans entirely on LangChain and LangGraph—direct open-source rivals to Haystack. Deepset builds the underlying orchestration framework rather than just consuming wrapper libraries, meaning Subhra needs lower-level systems engineering and core framework contribution experience rather than standard application-level prototyping.\nMATCHING_SKILLS: Python, RAG pipelines, sentence-transformers, FastAPI, Docker basics, deep learning\nGAPS: Haystack framework proficiency, Core open-source library architecture, Cloud infrastructure/distributed systems, Production search and retrieval evaluation at scale",
+  "matching_skills": [
+    "Python",
+    "RAG pipelines",
+    "sentence-transformers",
+    "FastAPI",
+    "Docker basics",
+    "deep learning"
+  ],
+  "skill_gaps": [
+    "Haystack framework proficiency",
+    "Core open-source library architecture",
+    "Cloud infrastructure/distributed systems",
+    "Production search and retrieval evaluation at scale"
+  ],
+  "cold_email": "m a 3rd-year student at IIT Roorkee building production-oriented AI infrastructure. My recent work includes architecting enterprise RAG pipelines, deploying asynchronous FastAPI microservices, and engineering Lang",
+  "email_subject": "Enterprise RAG Builder | ML Engineer Intern",
+  "linkedin_note": "Tracking Haystack 2.0’s component architecture closely. I’ve built enterprise RAG pipelines, LangGraph multi-agent systems, and FastAPI microservices. Connecting to follow your work",
+  "researched_at": "2026-10-11",
+  "skipped": false,
+  "error": ""
+}

@@ -1,0 +1,12 @@
+{
+  "startup": "Deepgram",
+  "fit_score": 8,
+  "company_summary": "Deepgram is a voice AI platform that provides accuracy, speed, and reliability for building voice AI products. Their core product combines speech recognition with AI cloud technology, including a partnership with Cloudflare's AI Cloud. Recently, the company announced a partnership with AWS to offer up to $100,000 in credits for 12 months to power voice AI products. The company's funding stage and team size are not mentioned, but it is described as a trusted platform for startups and enterprises, indicating a level of established growth.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in deep learning, natural language processing, and experience with LangChain and LangGraph demonstrate a strong potential fit for a voice AI platform like Deepgram. However, the candidate's background in mechanical/production engineering and lack of direct experience with speech recognition or voice AI products may pose some challenges. Overall, the candidate's technical skills and project experience suggest a promising match.\nMATCHING_SKILLS: Python, deep learning, LangChain, LangGraph, FastAPI, sentence-transformers\nGAPS: speech recognition, voice AI product development, Cloudflare's AI Cloud, AWS partnership specifics, Docker advanced skills",
+  "cold_email": "I was impressed by Deepgram's recent partnership with AWS, offering up to $100,000 in credits to power voice AI products. As a student at IIT Roorkee, I've been exploring the applications of AI in voice technology, particularly with projects like the LangGraph agent, which I've used to build conversational interfaces. I'd love to discuss how my skills in deep learning and NLP can contribute to Deepgram's innovative voice AI platform. Can we schedule a 15-minute call to explore potential opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in exploring voice AI opportunities with Deepgram's speech recognition tech — Built conversational interfaces with similar platforms, would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

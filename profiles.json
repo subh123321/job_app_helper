@@ -1,0 +1,14 @@
+[
+  {
+    "id": "default",
+    "name": "Subhra",
+    "target_role": "AI / Machine Learning Engineer Intern",
+    "background": "3rd year IIT Roorkee student (Mechanical/Production Engineering)",
+    "skills": "Python, LangChain, LangGraph, RAG pipelines, ChromaDB, FastAPI, Groq API, sentence-transformers, deep learning, Docker basics, W&B",
+    "projects": "Built enterprise RAG pipelines, LangGraph multi-agent systems, and FastAPI microservices",
+    "github": "github.com/subhra",
+    "linkedin": "linkedin.com/in/subhra",
+    "contact_email": "subhra@example.com",
+    "tone": "confident, concise, and technically grounded"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "startup": "Fireworks AI",
+  "fit_score": 8,
+  "company_summary": "Fireworks is a company that provides a platform for AI-native startups to build and scale their Generative AI capabilities. Their core product is the Fireworks platform, which supports startups from experimentation to production. Recently, they launched the Fireworks for Startups program to offer comprehensive support for startups building AI products. The company's funding stage and team size are not mentioned in the provided information.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in AI and machine learning, particularly with LangChain, LangGraph, and RAG pipelines, align well with Fireworks AI's focus on Generative AI capabilities. However, the candidate's background in Mechanical/Production Engineering may not be directly relevant to the company's core product. The candidate's projects and GitHub profile demonstrate hands-on experience with relevant technologies, which is a significant advantage.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, FastAPI, deep learning (CNNs, RNNs, LSTMs)\nGAPS: Direct experience with Fireworks platform, comprehensive knowledge of Docker, expertise in DevOps, experience with cloud infrastructure, knowledge of specific AI startup ecosystem",
+  "cold_email": "I was impressed by Fireworks AI's recent launch of the Fireworks for Startups program, which aims to support AI-native startups in building and scaling their Generative AI capabilities. As a student at IIT Roorkee with experience in AI and machine learning, I'm excited about the potential of Fireworks' platform. My project on implementing a RAG pipeline for question answering has given me a deep understanding of the challenges and opportunities in Generative AI. I'd love to discuss how my skills align with Fireworks AI's goals and explore potential internship opportunities. Can we schedule a 15-minute call to discuss further?\n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in exploring how Fireworks for Startups can accelerate AI innovation. Built AI solutions with similar goals — would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

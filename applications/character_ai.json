@@ -1,0 +1,12 @@
+{
+  "startup": "Character.AI",
+  "fit_score": 8,
+  "company_summary": "Character.ai is a Palo Alto-based startup that creates personal AI platforms for open-ended conversational applications. The company's core product is built on breakthrough research, offering a direct-to-consumer experience, and its founders, Noam Shazeer and Daniel De Freitas, are AI experts who previously worked on Google's LaMDA language model. Character.ai raised $43 million in seed funding in 2021 and recently made news for its innovative approach to chatbots, with one of its founders contributing to a widely-cited paper on the topic. With no recent update on team size, the company continues to develop its conversational AI experiences.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in LangChain, LangGraph, and RAG pipelines demonstrate a strong foundation in conversational AI, which aligns well with Character.ai's core product. Additionally, their experience with deep learning and FastAPI suggests they could contribute to the company's development of personal AI platforms. However, the candidate's background in mechanical/production engineering may not directly relate to the company's focus on AI and conversational applications.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, FastAPI, deep learning\nGAPS: direct experience with chatbot development, natural language processing, specific knowledge of Character.ai's tech stack",
+  "cold_email": "I was impressed by Character.ai's recent advancements in chatbot technology, particularly the innovative approach outlined in the paper contributed by one of its founders. As a student at IIT Roorkee, I've been exploring conversational AI through projects like the RAG pipeline, which enables more efficient and accurate question-answering systems. I'd love to discuss how my skills in LangChain and deep learning could contribute to Character.ai's mission. Can we schedule a 15-minute call to explore potential opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in Character.ai's conversational AI capabilities. Built conversational interfaces with similar tech — would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

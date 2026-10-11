@@ -1,0 +1,12 @@
+{
+  "startup": "Snorkel AI",
+  "fit_score": 8,
+  "company_summary": "Snorkel AI is a company that helps build and deploy custom AI and agentic systems for businesses. Their core product is the Snorkel AI Data Development Platform, which includes tools such as Snorkel Evaluate, designed to improve the accuracy of AI systems. Recently, the company announced the general availability of two new product offerings on its platform, and has also demonstrated its effectiveness in improving AI accuracy, such as with startup Rox, where it improved accuracy by 10-12%. The company appears to be in a growth stage, with no specific funding stage or team size mentioned, but it is actively engaging with experts and businesses to shape the future of AI.",
+  "tech_stack": "Here's the extracted tech stack:\n* Programming languages: Not mentioned\n* ML/AI frameworks: Hugging Face\n* Vector databases: Not mentioned\n* Cloud infra: Not mentioned\n* LLM tooling: Hugging Face Inference Endpoints, Snorkel AI",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in AI and machine learning, particularly with LangChain, LangGraph, and deep learning, align well with Snorkel AI's focus on building and deploying custom AI systems. However, the candidate's background in mechanical/production engineering may not be directly relevant to the company's core products and services. The candidate's experience with relevant technologies and projects demonstrates potential for growth and adaptability.\nMATCHING_SKILLS: LangGraph, deep learning, Python, FastAPI\nGAPS: Hugging Face, Snorkel AI platform experience, cloud infrastructure knowledge, vector databases",
+  "cold_email": "I was impressed by Snorkel AI's recent announcement of improving AI accuracy by 10-12% for startup Rox, and I believe my experience with LangGraph agent projects could be valuable in optimizing AI systems. As a student at IIT Roorkee, I've worked on projects that involve building custom AI pipelines, and I'm excited about the potential of Snorkel AI's Data Development Platform. I'd love to discuss how my skills align with your team's work and explore potential internship opportunities. Can we schedule a 15-minute call to discuss further?\n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "Impressed by Snorkel AI's integration with Hugging Face - Built AI models with similar tech — would love to discuss",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

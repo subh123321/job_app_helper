@@ -1,0 +1,12 @@
+{
+  "startup": "Anthropic",
+  "fit_score": 8,
+  "company_summary": "Anthropic is a safety-minded AI startup founded by ex-OpenAI researchers, focusing on AI safety and research. The company's core product includes frontier models and platform products, which are used by enterprise teams, Fortune 500 companies, and AI-native startups. Recently, Anthropic announced new features to support its customers, although specific details about funding stage and team size are not mentioned. As a cutting-edge AI company, Anthropic aims to provide innovative solutions for its clients, leveraging its expertise in AI safety and research.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in AI and machine learning, such as Python, LangChain, and deep learning, align well with Anthropic's focus on AI safety and research. Additionally, their experience with RAG pipelines, LangGraph, and sentence-transformers demonstrates a strong foundation in natural language processing, which is likely to be valuable at Anthropic. However, the candidate's lack of direct industry experience and limited background in software engineering may pose some challenges.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, deep learning, FastAPI\nGAPS: direct industry experience, software engineering, specific knowledge of Anthropic's tech stack",
+  "cold_email": "I was impressed by Anthropic's recent announcement of new features to support its customers, and I'm excited about the potential applications of your RAG pipeline in enhancing AI safety. As a student at IIT Roorkee, I've been exploring the possibilities of LangGraph agents in natural language processing. I'd love to discuss how my skills in Python, LangChain, and deep learning can contribute to Anthropic's mission. Can we schedule a 15-minute call to explore potential internship opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "Interested in Anthropic's approach to AI safety — impressed by the focus on responsible AI development. Built AI solutions with similar goals — would love to discuss.",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

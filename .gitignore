@@ -1,0 +1,5 @@
+.env
+job_agent_env/
+__pycache__/
+*.pyc
+chroma_memory/

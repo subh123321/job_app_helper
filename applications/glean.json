@@ -1,0 +1,12 @@
+{
+  "startup": "Glean",
+  "fit_score": 8,
+  "company_summary": "Glean Technologies, Inc. is an American technology company specializing in enterprise-grade artificial intelligence (AI) and search capabilities.\nGlean is the Work AI platform connected to your enterprise's data. Find, create, and automate anything. Explore what Work AI can do for you!\nGlean is an AI platform for work that unifies enterprise search, assistants, and agents on your company's context—securely automating real work across every ...",
+  "tech_stack": "Unknown",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in AI, deep learning, and natural language processing align well with Glean's focus on enterprise-grade artificial intelligence and search capabilities. However, the candidate's background in mechanical/production engineering may not directly relate to the company's core technology, and their lack of experience with a full-stack development environment could be a limitation. Overall, the candidate's technical skills and projects demonstrate a strong potential fit for Glean's Work AI platform.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, deep learning, sentence-transformers, FastAPI\nGAPS: enterprise search, automation, AI platform development, large-scale data management, security, Docker advanced, cloud computing",
+  "cold_email": "I was impressed by Glean's recent advancements in unifying enterprise search and automation, and I believe their Work AI platform has the potential to revolutionize the way companies interact with their data. As a student at IIT Roorkee, I've been working on projects that align with Glean's goals, particularly the RAG pipeline, which I've used to improve question-answering capabilities in my own projects. I'd love to discuss how my skills in LangGraph and deep learning can contribute to Glean's mission. Can we schedule a 15-minute call to explore potential opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "Interested in Glean's unified enterprise search capabilities — Built AI-powered solutions with similar tech — would love to discuss.",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

@@ -1,0 +1,12 @@
+{
+  "startup": "Perplexity AI",
+  "fit_score": 8,
+  "company_summary": "Perplexity AI, Inc. is a company that develops a search engine and partners with top language models to create a user-friendly interface for enterprises. Their core product is a search engine with a fast and affordable API that includes search and citations. Recently, the company was mentioned in relation to a startup competition where participants must have an active Perplexity subscription to enter. The company was founded in August 2022 by a team of four engineers, but the current funding stage and team size are not specified.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in LangChain, LangGraph, and RAG pipelines demonstrate a strong fit for Perplexity AI's language model-based search engine, and their experience with FastAPI and API development could be valuable for the company's API-based product. However, the candidate's background in Mechanical/Production Engineering may not be directly relevant to the company's core technology. The candidate's projects and GitHub profile suggest a strong foundation in relevant technologies.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, FastAPI, sentence-transformers, deep learning\nGAPS: direct experience with search engine development, citations, Docker expertise, Groq API integration experience",
+  "cold_email": "I noticed that Perplexity AI's search engine was recently featured as a required tool for a startup competition, highlighting its growing importance in the industry. As a student at IIT Roorkee with experience in LangChain and LangGraph, I'm excited about the potential applications of the RAG pipeline in enhancing search engine capabilities. I'd love to discuss how my skills align with Perplexity AI's goals. Can we schedule a 15-minute call to explore potential opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in exploring Perplexity's search engine API for enterprise applications — Built scalable search solutions, would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

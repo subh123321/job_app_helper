@@ -1,0 +1,12 @@
+{
+  "startup": "Writer",
+  "fit_score": 8,
+  "company_summary": "Writer is a corporate generative AI assistant startup that offers an AI content generator for products, providing tools such as AI product description generators and AI writing tools. The company has recently raised $100 million in a Series B funding round led by Iconiq Growth, which is an unexpectedly large early-stage funding round. This funding round indicates that Writer is in a growth stage, with significant investment to support its development. The team size is not mentioned, but the large funding round suggests that the company is poised for expansion.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate's skills in AI and machine learning, such as LangChain, LangGraph, and deep learning, align well with Writer's focus on generative AI and content generation. However, the candidate's background in mechanical/production engineering may not directly relate to the company's core business, and their lack of experience in a professional setting could be a concern. Overall, the candidate's technical skills are a strong fit, but their non-technical background and limited experience may require additional consideration.\nMATCHING_SKILLS: Python, LangChain, LangGraph, RAG pipelines, deep learning, FastAPI\nGAPS: direct experience in content generation, natural language processing, professional software development experience",
+  "cold_email": "Writer's recent $100 million Series B funding round highlights the growing demand for AI-powered content generation tools. As a student at IIT Roorkee, I've been exploring the applications of LangGraph agents in generating high-quality content. I'm impressed by Writer's innovative approach to AI content generation and believe my skills in LangGraph and RAG pipelines could contribute to the company's growth. I'd love to discuss my potential fit for an ML internship at Writer - would you be available for a 15-minute call to explore further?\n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "\"Interested in Writer's AI content generator. Built AI-powered content solutions — would love to discuss\"",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

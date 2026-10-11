@@ -1,0 +1,12 @@
+{
+  "startup": "Pinecone",
+  "fit_score": 8,
+  "company_summary": "Pinecone is a leading provider of vector databases, offering a platform for building accurate and performant AI applications at scale in production. Their core product is a vector database that enables companies to deploy AI applications with high uptime, boasting a 99.95% uptime SLA. Recently, the company has been trusted by top startups and enterprises for their production AI applications, although no specific funding stage or team size is mentioned. With a focus on delivering high-quality technical support, Pinecone is well-positioned to support the growing demand for scalable AI solutions.",
+  "tech_stack": "Not publicly disclosed",
+  "fit_assessment": "SCORE: 8\nREASONING: The candidate has a strong background in AI and deep learning, with skills that align well with Pinecone's focus on building accurate and performant AI applications. However, the candidate's lack of direct experience with vector databases and limited professional experience may pose a challenge. The candidate's projects and GitHub profile demonstrate a strong foundation in relevant technologies, making them a promising fit for Pinecone.\nMATCHING_SKILLS: Python, deep learning, LangGraph, RAG pipelines, FastAPI, sentence-transformers\nGAPS: vector database experience, production-level AI application deployment, technical support experience, Docker advanced skills",
+  "cold_email": "I was impressed by Pinecone's recent traction in supporting top startups and enterprises with their production AI applications, and I believe the company's vector database is a key factor in achieving the 99.95% uptime SLA. As a student at IIT Roorkee, I've been exploring the applications of LangGraph agents in building performant AI models. I'd love to discuss how my skills in deep learning and experience with RAG pipelines could contribute to Pinecone's mission. Can we schedule a 15-minute call to explore potential opportunities? \n[Your Name] | IIT Roorkee | github.com/[yourname]",
+  "linkedin_note": "Impressed by Pinecone's 99.95% uptime SLA — Built scalable AI solutions with similar goals, would love to discuss.",
+  "researched_at": "2026-06-12",
+  "skipped": false,
+  "error": ""
+}

@@ -1,0 +1,12 @@
+{
+  "startup": "Vellum AI",
+  "fit_score": 0,
+  "company_summary": "No results found.",
+  "tech_stack": "Unknown",
+  "fit_assessment": "Assessment failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+  "cold_email": "[SKIPPED — fit score 0/10 below threshold]",
+  "linkedin_note": "[SKIPPED]",
+  "researched_at": "2026-06-12",
+  "skipped": true,
+  "error": "Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}"
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobApp Helper — Autonomous AI Job Application & Outreach Studio</title>
+  <meta name="description" content="AI multi-agent assistant for researching tech startups, evaluating candidate fit, and crafting high-conversion cold emails and LinkedIn notes with vector memory.">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Main App Shell -->
+  <div class="app-container">
+    
+    <!-- Top Navigation Bar -->
+    <header class="app-header" id="appHeader">
+      <div class="header-left">
+        <div class="brand-logo" id="brandLogo">
+          <div class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">JobApp<span class="logo-highlight">Helper</span></span>
+            <span class="logo-badge">v2.0 Agentic</span>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs" id="mainNav">
+          <button class="nav-tab active" data-tab="generator" id="navTabGenerator">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+            Studio & Generator
+          </button>
+          <button class="nav-tab" data-tab="discovery" id="navTabDiscovery">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Discovery & Memory
+            <span class="tab-badge" id="memoryCountBadge">18</span>
+          </button>
+          <button class="nav-tab" data-tab="archive" id="navTabArchive">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+            Saved Applications
+            <span class="tab-badge" id="archiveCountBadge">40</span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <!-- Active Profile Pill -->
+        <div class="profile-pill" id="profilePillBtn" title="Click to edit candidate profile">
+          <div class="profile-avatar" id="avatarInitial">S</div>
+          <div class="profile-info">
+            <span class="profile-name" id="pillCandidateName">Subhra</span>
+            <span class="profile-role" id="pillTargetRole">AI Engineer Intern</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </div>
+
+        <!-- Settings Button -->
+        <button class="btn-icon" id="openSettingsBtn" title="LLM & API Key Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Content Pages Container -->
+    <main class="main-content">
+
+      <!-- ================================================================= -->
+      <!-- TAB 1: STUDIO & GENERATOR -->
+      <!-- ================================================================= -->
+      <section class="tab-pane active" id="tabGenerator">
+        
+        <!-- Input & Run Banner -->
+        <div class="generator-banner card-glass">
+          <div class="banner-headline">
+            <span class="subheading-chip">⚡ Autonomous Multi-Agent Pipeline</span>
+            <h1 class="main-headline">Research Startups & Craft Hyper-Tailored Outreach</h1>
+            <p class="sub-description">
+              Our LangGraph agent analyzes company product releases and tech stacks, checks ChromaDB memory, scores candidate fit, and generates high-converting cold emails + LinkedIn connection notes.
+            </p>
+          </div>
+
+          <!-- Mode Selector (Single vs Batch) -->
+          <div class="mode-selector">
+            <button class="mode-btn active" id="modeSingleBtn" data-mode="single">Single Startup</button>
+            <button class="mode-btn" id="modeBatchBtn" data-mode="batch">Batch Sprint (List)</button>
+          </div>
+
+          <!-- Single Mode Form -->
+          <div class="input-form-box" id="singleFormBox">
+            <div class="search-input-group">
+              <div class="input-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <input 
+                type="text" 
+                id="targetStartupInput" 
+                class="form-control-large" 
+                placeholder="Enter AI startup name (e.g. Mistral AI, Together AI, Weaviate, Cohere)..." 
+                autocomplete="off"
+              >
+              <button class="btn-primary-gradient" id="runPipelineBtn">
+                <span class="btn-text">Run Agent Pipeline</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="suggestions-row">
+              <span class="suggestions-label">Try popular targets:</span>
+              <button class="chip-suggest" data-company="Mistral AI">Mistral AI</button>
+              <button class="chip-suggest" data-company="Together AI">Together AI</button>
+              <button class="chip-suggest" data-company="Weaviate">Weaviate</button>
+              <button class="chip-suggest" data-company="Cohere">Cohere</button>
+              <button class="chip-suggest" data-company="Weights & Biases">Weights & Biases</button>
+              <button class="chip-suggest" data-company="Modal Labs">Modal Labs</button>
+              <button class="chip-suggest" data-company="LangChain">LangChain</button>
+              <label class="refresh-toggle" title="Check this to force re-researching web and overwrite memory cache">
+                <input type="checkbox" id="forceRefreshCheckbox">
+                <span>Force Fresh Web Search</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Batch Mode Form -->
+          <div class="input-form-box hidden" id="batchFormBox">
+            <div class="batch-textarea-container">
+              <label class="form-label" for="batchStartupsTextarea">Enter Startup Names (one per line or comma-separated):</label>
+              <textarea 
+                id="batchStartupsTextarea" 
+                class="form-textarea-batch" 
+                rows="4" 
+                placeholder="Mistral AI&#10;Together AI&#10;Weaviate&#10;Cohere&#10;Modal Labs&#10;Weights & Biases"
+              ></textarea>
+            </div>
+            <div class="batch-actions-row">
+              <span class="batch-hint">Agent processes each startup, checks ChromaDB memory, and ranks by fit score.</span>
+              <button class="btn-primary-gradient" id="runBatchBtn">
+                <span class="btn-text">Launch Batch Sprint</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Pipeline Execution Card (Shows when running or just finished) -->
+        <div class="pipeline-tracker-card card-glass hidden" id="pipelineTrackerCard">
+          <div class="tracker-header">
+            <div class="tracker-status">
+              <div class="spinner-ring" id="trackerSpinner"></div>
+              <div>
+                <h3 class="tracker-title" id="trackerTitle">Multi-Agent Workflow In Progress</h3>
+                <span class="tracker-subtitle" id="trackerSubtitle">Initializing LangGraph supervisor...</span>
+              </div>
+            </div>
+            <div class="tracker-progress-num" id="trackerProgressNum">0%</div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progressBarFill" style="width: 0%"></div>
+          </div>
+
+          <!-- 5-Step Visual Nodes -->
+          <div class="pipeline-steps-grid">
+            <div class="step-node" id="stepNode1">
+              <div class="step-icon">1</div>
+              <div class="step-meta">
+                <span class="step-name">Memory Cache</span>
+                <span class="step-desc">ChromaDB Lookup</span>
+              </div>
+            </div>
+            <div class="step-node" id="stepNode2">
+              <div class="step-icon">2</div>
+              <div class="step-meta">
+                <span class="step-name">Web Research</span>
+                <span class="step-desc">DuckDuckGo + Intel</span>
+              </div>
+            </div>
+            <div class="step-node" id="stepNode3">
+              <div class="step-icon">3</div>
+              <div class="step-meta">
+                <span class="step-name">Fit Assessor</span>
+                <span class="step-desc">Profile Alignment</span>
+              </div>
+            </div>
+            <div class="step-node" id="stepNode4">
+              <div class="step-icon">4</div>
+              <div class="step-meta">
+                <span class="step-name">Cold Email</span>
+                <span class="step-desc">Custom Hook & Asks</span>
+              </div>
+            </div>
+            <div class="step-node" id="stepNode5">
+              <div class="step-icon">5</div>
+              <div class="step-meta">
+                <span class="step-name">LinkedIn Note</span>
+                <span class="step-desc">&lt; 300 Char Pitch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expandable Live Logs Feed -->
+          <div class="tracker-logs-container">
+            <div class="logs-header" id="toggleLogsBtn">
+              <span>Terminal Execution Logs</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <div class="logs-feed" id="logsFeed">
+              <div class="log-line text-muted">[SYSTEM] Pipeline initialized. Ready for startup intelligence.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- OUTREACH STUDIO WORKSPACE (Active Result) -->
+        <!-- =============================================================== -->
+        <div class="outreach-studio-card card-glass hidden" id="outreachStudioCard">
+          
+          <!-- Top Results Summary Banner -->
+          <div class="studio-top-banner">
+            <div class="startup-hero-info">
+              <div class="startup-avatar-circle" id="studioStartupInitial">M</div>
+              <div>
+                <div class="startup-meta-row">
+                  <h2 class="startup-hero-name" id="studioStartupName">Mistral AI</h2>
+                  <span class="cache-badge" id="studioSourceBadge">⚡ From Memory</span>
+                  <span class="date-badge" id="studioDateBadge">2026-10-11</span>
+                </div>
+                <p class="startup-hero-headline" id="studioTargetRoleDisplay">Outreach prepared for AI Engineer Intern position</p>
+              </div>
+            </div>
+
+            <!-- Fit Score Meter -->
+            <div class="fit-score-box">
+              <div class="score-dial" id="scoreDial">
+                <span class="dial-score" id="studioFitScore">8</span>
+                <span class="dial-max">/10</span>
+              </div>
+              <div class="score-label-meta">
+                <span class="score-fit-label" id="studioFitLabel">Strong Fit</span>
+                <span class="score-fit-hint" id="studioFitHint">Priority outreach recommended</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio 3-Column Grid -->
+          <div class="studio-grid">
+            
+            <!-- Left Column: Company Intel & Tech Stack -->
+            <div class="studio-col card-sub">
+              <div class="col-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                <h3>Company Intelligence</h3>
+              </div>
+              <div class="intel-block">
+                <span class="block-label">Overview & Core Value</span>
+                <p class="intel-text" id="studioCompanySummary">Loading...</p>
+              </div>
+              <div class="intel-block">
+                <span class="block-label">Extracted Tech Stack & Infra</span>
+                <div class="tech-chips-wrap" id="studioTechChips">
+                  <span class="tech-chip">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle Column: Career Advisor Fit Analysis -->
+            <div class="studio-col card-sub">
+              <div class="col-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h3>Advisor Fit Breakdown</h3>
+              </div>
+              
+              <div class="intel-block">
+                <span class="block-label">Honest Career Advisor Critique</span>
+                <p class="critique-text" id="studioFitReasoning">Loading...</p>
+              </div>
+
+              <div class="intel-block">
+                <span class="block-label text-success">Matching Candidate Skills</span>
+                <div class="matching-skills-wrap" id="studioMatchingSkills">
+                  <span class="match-chip">Python</span>
+                </div>
+              </div>
+
+              <div class="intel-block">
+                <span class="block-label text-warning">Skill Gaps to Address</span>
+                <div class="gaps-skills-wrap" id="studioSkillGaps">
+                  <span class="gap-chip">None detected</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Cold Email & LinkedIn Studio -->
+            <div class="studio-col card-sub outreach-draft-col">
+              <div class="col-header justify-between">
+                <div class="flex-center gap-2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <h3>Outreach Studio</h3>
+                </div>
+                <button class="btn-sm btn-outline" id="saveDraftEditsBtn" title="Save any text modifications made here">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                  Save Edits
+                </button>
+              </div>
+
+              <!-- Cold Email Card -->
+              <div class="draft-card">
+                <div class="draft-card-header">
+                  <span class="draft-card-title">Personalized Cold Email (&lt; 150 words)</span>
+                  <div class="draft-actions">
+                    <button class="btn-icon-sm" id="copyEmailBtn" title="Copy email text">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                      Copy
+                    </button>
+                    <a class="btn-icon-sm btn-mailto" id="openMailtoBtn" target="_blank" title="Open directly in email client">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                      Open Email
+                    </a>
+                  </div>
+                </div>
+
+                <div class="subject-row">
+                  <span class="subject-tag">Subject:</span>
+                  <input type="text" id="studioEmailSubject" class="subject-input" value="Exploring ML Internship Opportunities at Mistral AI">
+                </div>
+
+                <textarea id="studioColdEmail" class="draft-textarea" rows="8"></textarea>
+              </div>
+
+              <!-- LinkedIn Note Card -->
+              <div class="draft-card">
+                <div class="draft-card-header">
+                  <div class="flex-center gap-2">
+                    <span class="draft-card-title">LinkedIn Connection Note</span>
+                    <span class="char-counter" id="linkedinCharCount">0 / 300</span>
+                  </div>
+                  <button class="btn-icon-sm" id="copyLinkedinBtn" title="Copy LinkedIn note">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    Copy
+                  </button>
+                </div>
+                <textarea id="studioLinkedinNote" class="draft-textarea-li" rows="4"></textarea>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- TAB 2: DISCOVERY & MEMORY EXPLORER -->
+      <!-- ================================================================= -->
+      <section class="tab-pane" id="tabDiscovery">
+        <div class="discovery-hero card-glass">
+          <div class="discovery-header-row">
+            <div>
+              <span class="subheading-chip">🧠 ChromaDB Vector Memory</span>
+              <h2 class="section-title">Semantic Company Discovery & Knowledge Base</h2>
+              <p class="section-sub">
+                Our local ChromaDB embeddings index startup architectures, tooling, and products. Search across semantic concepts or discover similar companies based on past research.
+              </p>
+            </div>
+            <div class="memory-stats-badge card-sub">
+              <span class="stat-num" id="discoveryTotalCount">18</span>
+              <span class="stat-label">Companies in Vector Memory</span>
+            </div>
+          </div>
+
+          <!-- Semantic Search Controls -->
+          <div class="discovery-search-row">
+            <div class="search-input-group flex-1">
+              <div class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <input 
+                type="text" 
+                id="discoveryQueryInput" 
+                class="form-control" 
+                placeholder="Search concepts: e.g. 'RAG pipelines vector database', 'speech synthesis audio AI', 'deep learning inference'..."
+              >
+              <button class="btn-primary" id="discoverySearchBtn">Search Memory</button>
+            </div>
+
+            <!-- Quick Semantic Filters -->
+            <div class="discovery-chips-row">
+              <span class="text-muted text-xs">Quick search:</span>
+              <button class="chip-suggest-disc" data-query="vector databases RAG search">Vector Databases</button>
+              <button class="chip-suggest-disc" data-query="speech-to-text audio AI foundation models">Audio & Speech AI</button>
+              <button class="chip-suggest-disc" data-query="open source LLM inference GPU cloud">LLM Inference & Cloud</button>
+              <button class="chip-suggest-disc" data-query="AI agent systems workflows automation">Agentic Workflows</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semantic Results Grid -->
+        <div class="discovery-results-section">
+          <div class="results-header">
+            <h3 class="results-title" id="discoveryResultsTitle">Indexed Companies</h3>
+            <span class="results-count" id="discoveryResultsCount">Showing 18 companies</span>
+          </div>
+
+          <div class="discovery-grid" id="discoveryResultsGrid">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- TAB 3: APPLICATIONS ARCHIVE -->
+      <!-- ================================================================= -->
+      <section class="tab-pane" id="tabArchive">
+        <div class="archive-header-card card-glass">
+          <div class="archive-headline-wrap">
+            <div>
+              <span class="subheading-chip">📁 Local Applications Repository</span>
+              <h2 class="section-title">Application Records & Outreach Archive</h2>
+              <p class="section-sub">All previously researched companies and outreach packages stored inside <code>applications/</code>.</p>
+            </div>
+
+            <!-- Metrics Pills -->
+            <div class="archive-metrics-row">
+              <div class="metric-pill">
+                <span class="metric-val" id="metricTotalApps">40</span>
+                <span class="metric-lbl">Total</span>
+              </div>
+              <div class="metric-pill metric-high">
+                <span class="metric-val" id="metricHighFit">18</span>
+                <span class="metric-lbl">High Fit (≥7)</span>
+              </div>
+              <div class="metric-pill metric-med">
+                <span class="metric-val" id="metricMedFit">0</span>
+                <span class="metric-lbl">Medium (5-6)</span>
+              </div>
+              <div class="metric-pill metric-skip">
+                <span class="metric-val" id="metricSkipped">22</span>
+                <span class="metric-lbl">Skipped / Errors</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter & Search Controls -->
+          <div class="archive-controls-row">
+            <div class="search-input-group flex-1">
+              <div class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <input type="text" id="archiveSearchInput" class="form-control" placeholder="Filter by startup name, tech stack, or keywords...">
+            </div>
+
+            <!-- Status Filter Pills -->
+            <div class="filter-pills" id="archiveFilterPills">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="high">Top Match (≥7)</button>
+              <button class="filter-pill" data-filter="medium">Moderate (5-6)</button>
+              <button class="filter-pill" data-filter="skipped">Skipped &amp; Errors</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archive Grid -->
+        <div class="archive-grid" id="archiveGrid">
+          <!-- Dynamically populated cards -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL: CANDIDATE PROFILE MANAGER -->
+  <!-- ===================================================================== -->
+  <div class="modal-backdrop hidden" id="profileModal">
+    <div class="modal-card card-glass">
+      <div class="modal-header">
+        <div class="flex-center gap-3">
+          <div class="modal-icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <h3 class="modal-title">Candidate Profile Setup</h3>
+            <span class="modal-subtitle">Configure your skills and background for accurate fit assessment and personalized outreach.</span>
+          </div>
+        </div>
+        <button class="btn-close" id="closeProfileModalBtn">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="profileForm" class="profile-form-grid">
+          
+          <div class="form-group">
+            <label class="form-label" for="profName">Full Name</label>
+            <input type="text" id="profName" class="form-control" required placeholder="Subhra">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="profTargetRole">Target Role</label>
+            <input type="text" id="profTargetRole" class="form-control" required placeholder="AI / Machine Learning Engineer Intern">
+          </div>
+
+          <div class="form-group col-span-2">
+            <label class="form-label" for="profBackground">Education & Background</label>
+            <input type="text" id="profBackground" class="form-control" required placeholder="3rd year IIT Roorkee student (Mechanical/Production Engineering)">
+          </div>
+
+          <div class="form-group col-span-2">
+            <label class="form-label" for="profSkills">Core Technical Skills (Comma-separated)</label>
+            <textarea id="profSkills" class="form-control" rows="2" placeholder="Python, LangChain, LangGraph, RAG pipelines, ChromaDB, FastAPI, Groq API, sentence-transformers, PyTorch, Docker basics"></textarea>
+          </div>
+
+          <div class="form-group col-span-2">
+            <label class="form-label" for="profProjects">Key Highlighted Projects (Referenced in cold emails)</label>
+            <textarea id="profProjects" class="form-control" rows="2" placeholder="Built enterprise RAG pipelines, LangGraph multi-agent systems, and FastAPI microservices"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="profGithub">GitHub URL</label>
+            <input type="text" id="profGithub" class="form-control" placeholder="github.com/subhra">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="profLinkedin">LinkedIn URL</label>
+            <input type="text" id="profLinkedin" class="form-control" placeholder="linkedin.com/in/subhra">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="profEmail">Contact Email</label>
+            <input type="email" id="profEmail" class="form-control" placeholder="subhra@example.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="profTone">Outreach Tone</label>
+            <select id="profTone" class="form-control">
+              <option value="confident, concise, and technically grounded">Confident & Technically Grounded</option>
+              <option value="enthusiastic startup hacker">Enthusiastic Startup Hacker</option>
+              <option value="direct, ultra-concise executive style">Direct & Ultra-Concise</option>
+              <option value="curious researcher">Curious Researcher</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <span class="text-xs text-muted">Profiles are saved locally in <code>profiles.json</code>.</span>
+        <div class="flex-center gap-2">
+          <button class="btn-outline" id="cancelProfileBtn">Cancel</button>
+          <button class="btn-primary" id="saveProfileBtn">Save Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL: SETTINGS & LLM CONFIGURATION -->
+  <!-- ===================================================================== -->
+  <div class="modal-backdrop hidden" id="settingsModal">
+    <div class="modal-card card-glass max-w-lg">
+      <div class="modal-header">
+        <div class="flex-center gap-3">
+          <div class="modal-icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <div>
+            <h3 class="modal-title">AI Engine & API Settings</h3>
+            <span class="modal-subtitle">Choose your LLM provider and configure custom API keys.</span>
+          </div>
+        </div>
+        <button class="btn-close" id="closeSettingsModalBtn">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">LLM Provider</label>
+          <div class="provider-radio-row">
+            <label class="provider-radio-card active" id="providerGeminiCard">
+              <input type="radio" name="llmProvider" value="gemini" checked>
+              <div class="provider-meta">
+                <span class="provider-name">Google Gemini</span>
+                <span class="provider-desc">Recommended (Gemini 3.8 Flash)</span>
+              </div>
+            </label>
+            <label class="provider-radio-card" id="providerGroqCard">
+              <input type="radio" name="llmProvider" value="groq">
+              <div class="provider-meta">
+                <span class="provider-name">Groq Cloud</span>
+                <span class="provider-desc">Llama 3.3 70B (Fast Free Tier)</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="settingModel">Model Selection</label>
+          <select id="settingModel" class="form-control">
+            <option value="gemini-3.8-flash">gemini-3.8-flash (Latest &amp; High Quality)</option>
+            <option value="gemini-3.5-flash">gemini-3.5-flash</option>
+            <option value="llama-3.3-70b-versatile">llama-3.3-70b-versatile (Groq)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="settingApiKey">Custom API Key (Optional)</label>
+          <input 
+            type="password" 
+            id="settingApiKey" 
+            class="form-control" 
+            placeholder="Leave empty to use server default from .env"
+          >
+          <span class="form-help">If empty, uses <code>GEMINI_API_KEY</code> or <code>GROQ_API_KEY</code> from the server's <code>.env</code> file.</span>
+        </div>
+
+        <!-- Connection Test Box -->
+        <div class="test-connection-box card-sub">
+          <div class="flex-center justify-between">
+            <span class="text-sm font-semibold">Verify Connectivity</span>
+            <button class="btn-sm btn-outline" id="testConnectionBtn">Test Connection</button>
+          </div>
+          <div class="test-result-msg hidden" id="testResultMsg"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-outline" id="cancelSettingsBtn">Close</button>
+        <button class="btn-primary" id="saveSettingsBtn">Save Preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main Application Script -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
