@@ -382,7 +382,9 @@ async def get_available_models():
 
 if __name__ == "__main__":
     import uvicorn
+    host = os.environ.get("HOST", "0.0.0.0")
+    port = int(os.environ.get("PORT", 8000))
     print("\n" + "=" * 60)
-    print("[SERVER] JobApp Helper Server Starting on http://127.0.0.1:8000")
+    print(f"[SERVER] JobApp Helper Server Starting on http://{host}:{port}")
     print("=" * 60 + "\n")
-    uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("server:app", host=host, port=port, reload=False)
